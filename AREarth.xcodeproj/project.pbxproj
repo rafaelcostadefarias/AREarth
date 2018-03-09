@@ -13,6 +13,11 @@
 		0BB821E92050A5D90060FF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821E72050A5D90060FF5E /* Main.storyboard */; };
 		0BB821EB2050A5D90060FF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821EA2050A5D90060FF5E /* Assets.xcassets */; };
 		0BB821EE2050A5D90060FF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821EC2050A5D90060FF5E /* LaunchScreen.storyboard */; };
+		0BB821F92050A64E0060FF5E /* Specular.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821F52050A64E0060FF5E /* Specular.png */; };
+		0BB821FA2050A64E0060FF5E /* Emission.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821F62050A64E0060FF5E /* Emission.png */; };
+		0BB821FB2050A64E0060FF5E /* Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821F72050A64E0060FF5E /* Normal.png */; };
+		0BB821FC2050A64E0060FF5E /* Diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB821F82050A64E0060FF5E /* Diffuse.png */; };
+		0BB821FE2050A69B0060FF5E /* EarthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB821FD2050A69B0060FF5E /* EarthNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0BB821EA2050A5D90060FF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB821ED2050A5D90060FF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BB821EF2050A5D90060FF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB821F52050A64E0060FF5E /* Specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Specular.png; sourceTree = "<group>"; };
+		0BB821F62050A64E0060FF5E /* Emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emission.png; sourceTree = "<group>"; };
+		0BB821F72050A64E0060FF5E /* Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Normal.png; sourceTree = "<group>"; };
+		0BB821F82050A64E0060FF5E /* Diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diffuse.png; sourceTree = "<group>"; };
+		0BB821FD2050A69B0060FF5E /* EarthNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				0BB821E12050A5D90060FF5E /* AppDelegate.swift */,
 				0BB821E32050A5D90060FF5E /* art.scnassets */,
 				0BB821E52050A5D90060FF5E /* ViewController.swift */,
+				0BB821FD2050A69B0060FF5E /* EarthNode.swift */,
 				0BB821E72050A5D90060FF5E /* Main.storyboard */,
 				0BB821EA2050A5D90060FF5E /* Assets.xcassets */,
 				0BB821EC2050A5D90060FF5E /* LaunchScreen.storyboard */,
 				0BB821EF2050A5D90060FF5E /* Info.plist */,
+				0BB821F82050A64E0060FF5E /* Diffuse.png */,
+				0BB821F62050A64E0060FF5E /* Emission.png */,
+				0BB821F72050A64E0060FF5E /* Normal.png */,
+				0BB821F52050A64E0060FF5E /* Specular.png */,
 			);
 			path = AREarth;
 			sourceTree = "<group>";
@@ -127,7 +142,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB821E42050A5D90060FF5E /* art.scnassets in Resources */,
+				0BB821F92050A64E0060FF5E /* Specular.png in Resources */,
+				0BB821FA2050A64E0060FF5E /* Emission.png in Resources */,
 				0BB821EE2050A5D90060FF5E /* LaunchScreen.storyboard in Resources */,
+				0BB821FC2050A64E0060FF5E /* Diffuse.png in Resources */,
+				0BB821FB2050A64E0060FF5E /* Normal.png in Resources */,
 				0BB821EB2050A5D90060FF5E /* Assets.xcassets in Resources */,
 				0BB821E92050A5D90060FF5E /* Main.storyboard in Resources */,
 			);
@@ -141,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB821E62050A5D90060FF5E /* ViewController.swift in Sources */,
+				0BB821FE2050A69B0060FF5E /* EarthNode.swift in Sources */,
 				0BB821E22050A5D90060FF5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,12 +299,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CM5D23CA8;
 				INFOPLIST_FILE = AREarth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icebox.AREarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,12 +315,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CM5D23CA8;
 				INFOPLIST_FILE = AREarth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = icebox.AREarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
